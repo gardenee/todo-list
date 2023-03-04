@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   background: #e9ecef;
-  font-family: 'Hi Melody';
+  font-family: 'Poor Story';
+}
+input {
+  font-family: 'Poor Story';
 }
