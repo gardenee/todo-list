@@ -2,8 +2,8 @@ import { FaTrash, FaSquare, FaCheckSquare } from 'react-icons/fa';
 import './TodoListItem.scss';
 import cn from 'classnames';
 
-const TodoListItem = ({ todo }) => {
-  const { text, checked } = todo;
+const TodoListItem = ({ todo, onRemove }) => {
+  const { id, text, checked } = todo;
 
   return (
     <div className="TodoListItem">
@@ -12,7 +12,7 @@ const TodoListItem = ({ todo }) => {
         <div className="text">{text}</div>
       </div>
       <div className="remove">
-        <FaTrash />
+        <FaTrash onClick={() => onRemove(id)} />
       </div>
     </div>
   );
