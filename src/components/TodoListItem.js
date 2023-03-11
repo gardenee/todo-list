@@ -1,5 +1,6 @@
 import { FaTrash, FaSquare, FaCheckSquare } from 'react-icons/fa';
 import './TodoListItem.scss';
+import React from 'react';
 import cn from 'classnames';
 
 const TodoListItem = ({ todo, onRemove, onToggle }) => {
@@ -18,4 +19,4 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
   );
 };
 
-export default TodoListItem;
+export default React.memo(TodoListItem);
